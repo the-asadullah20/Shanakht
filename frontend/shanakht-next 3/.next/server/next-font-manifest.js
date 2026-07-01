@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/ibrahim/Downloads/shanakht-next 3/app/layout\":[\"static/media/a65324f02aa278dc-s.p.woff2\",\"static/media/af4bf8399d1aacdf-s.p.woff2\",\"static/media/e4af272ccee01ff0-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
