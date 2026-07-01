@@ -10,7 +10,10 @@ def get_client()->AsyncIOMotorClient:
     return client
 
 def get_database():
-    return get_client()[settings.MONGO_COLLECTION_NAME]
+    return get_client()[settings.MONGO_DB_NAME]
+
+def get_cnic_collection():
+    return get_database()[settings.MONGO_COLLECTION_NAME]
 
 async def ping_database()->bool:
     try:
