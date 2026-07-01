@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+motor
+pymongo
+google-cloud-vision
+pillow
+python-multipart
+python-dotenv
+pydantic
