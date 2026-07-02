@@ -7,3 +7,6 @@ pillow
 python-multipart
 python-dotenv
 pydantic
+langchain
+langchain-google-genai
+google-generativeai
