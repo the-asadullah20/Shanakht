@@ -1,7 +1,7 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from config.settings import settings
 
-client=AsyncIOMotorClient | None=None
+client: AsyncIOMotorClient | None = None
 
 def get_client()->AsyncIOMotorClient:
     global client

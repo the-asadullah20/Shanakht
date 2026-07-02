@@ -1,4 +1,18 @@
-export default function ResultCard({ onReset }: { onReset: () => void }) {
+export type CNICData = {
+  name?: string;
+  father_name?: string;
+  cnic_number: string;
+  date_of_birth?: string;
+  expiry_date?: string;
+  address?: string;
+};
+
+type Props = {
+  data: CNICData;
+  onReset: () => void;
+};
+
+export default function ResultCard({ data, onReset }: Props) {
   return (
     <div className="result active">
       <div className="result-head">
@@ -9,35 +23,27 @@ export default function ResultCard({ onReset }: { onReset: () => void }) {
       <div className="field-grid">
         <div className="field full">
           <span className="flabel">Full Name</span>
-          <span className="fval">Ahmed Raza Khan</span>
+          <span className="fval">{data.name || "N/A"}</span>
         </div>
         <div className="field">
           <span className="flabel">Father&apos;s Name</span>
-          <span className="fval">Muhammad Raza Khan</span>
+          <span className="fval">{data.father_name || "N/A"}</span>
         </div>
         <div className="field">
           <span className="flabel">CNIC Number</span>
-          <span className="fval">35202-1234567-1</span>
+          <span className="fval">{data.cnic_number || "N/A"}</span>
         </div>
         <div className="field">
           <span className="flabel">Date of Birth</span>
-          <span className="fval">14 Aug 1998</span>
-        </div>
-        <div className="field">
-          <span className="flabel">Gender</span>
-          <span className="fval">Male</span>
-        </div>
-        <div className="field full">
-          <span className="flabel">Address</span>
-          <span className="fval">House 22, Street 5, Model Town, Multan</span>
-        </div>
-        <div className="field">
-          <span className="flabel">Date of Issue</span>
-          <span className="fval">02 Mar 2019</span>
+          <span className="fval">{data.date_of_birth || "N/A"}</span>
         </div>
         <div className="field">
           <span className="flabel">Date of Expiry</span>
-          <span className="fval">02 Mar 2029</span>
+          <span className="fval">{data.expiry_date || "N/A"}</span>
+        </div>
+        <div className="field full">
+          <span className="flabel">Address</span>
+          <span className="fval">{data.address || "N/A"}</span>
         </div>
       </div>
 

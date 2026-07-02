@@ -1,4 +1,4 @@
-// File: /Users/ibrahim/Downloads/shanakht-next 3/app/page.tsx
+// File: D:\Shanakht\frontend\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

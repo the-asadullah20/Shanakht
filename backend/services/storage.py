@@ -5,7 +5,7 @@ from models.cnic import  CNICRecord,CNICData
 
 async def save_record(record:CNICRecord)->str:
     collection=get_cnic_collection()
-    result=await collection.insert_one({record.model_dump()})
+    result=await collection.insert_one(record.model_dump())
     return str(result.inserted_id)
 
 async def get_record(record_id:str)->dict |None:
